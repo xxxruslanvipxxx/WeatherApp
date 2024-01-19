@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		352AD25D2403FA5700FE672A /* Sunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		352AD25D2403FA5700FE672A /* SimpleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		352AD2602403FA5700FE672A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		352AD2622403FA5700FE672A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		352AD2642403FA5700FE672A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		352AD2542403FA5700FE672A = {
 			isa = PBXGroup;
 			children = (
-				352AD25F2403FA5700FE672A /* Sunny */,
+				352AD25F2403FA5700FE672A /* SimpleWeather */,
 				352AD25E2403FA5700FE672A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		352AD25E2403FA5700FE672A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				352AD25D2403FA5700FE672A /* Sunny.app */,
+				352AD25D2403FA5700FE672A /* SimpleWeather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		352AD25F2403FA5700FE672A /* Sunny */ = {
+		352AD25F2403FA5700FE672A /* SimpleWeather */ = {
 			isa = PBXGroup;
 			children = (
 				352AD2792404DD0600FE672A /* Extensions */,
@@ -64,7 +64,7 @@
 				352AD275240404A600FE672A /* View Controllers */,
 				352AD2742404048C00FE672A /* Supporting files */,
 			);
-			path = Sunny;
+			path = SimpleWeather;
 			sourceTree = "<group>";
 		};
 		352AD2742404048C00FE672A /* Supporting files */ = {
@@ -113,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		352AD25C2403FA5700FE672A /* Sunny */ = {
+		352AD25C2403FA5700FE672A /* SimpleWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 352AD2712403FA5800FE672A /* Build configuration list for PBXNativeTarget "Sunny" */;
+			buildConfigurationList = 352AD2712403FA5800FE672A /* Build configuration list for PBXNativeTarget "SimpleWeather" */;
 			buildPhases = (
 				352AD2592403FA5700FE672A /* Sources */,
 				352AD25A2403FA5700FE672A /* Frameworks */,
@@ -125,9 +125,9 @@
 			);
 			dependencies = (
 			);
-			name = Sunny;
+			name = SimpleWeather;
 			productName = Sunny;
-			productReference = 352AD25D2403FA5700FE672A /* Sunny.app */;
+			productReference = 352AD25D2403FA5700FE672A /* SimpleWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -136,8 +136,9 @@
 		352AD2552403FA5700FE672A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = "Ivan Akulov";
 				TargetAttributes = {
 					352AD25C2403FA5700FE672A = {
@@ -145,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 352AD2582403FA5700FE672A /* Build configuration list for PBXProject "Sunny" */;
+			buildConfigurationList = 352AD2582403FA5700FE672A /* Build configuration list for PBXProject "SimpleWeather" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				352AD25C2403FA5700FE672A /* Sunny */,
+				352AD25C2403FA5700FE672A /* SimpleWeather */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +237,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -246,6 +248,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,6 +299,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -306,6 +310,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -329,13 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H969S6YFE;
-				INFOPLIST_FILE = "Sunny/Supporting files/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "SimpleWeather/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Sunny;
+				PRODUCT_BUNDLE_IDENTIFIER = rusl.SimpleWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -347,13 +352,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5H969S6YFE;
-				INFOPLIST_FILE = "Sunny/Supporting files/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "SimpleWeather/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.Sunny;
+				PRODUCT_BUNDLE_IDENTIFIER = rusl.SimpleWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -363,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		352AD2582403FA5700FE672A /* Build configuration list for PBXProject "Sunny" */ = {
+		352AD2582403FA5700FE672A /* Build configuration list for PBXProject "SimpleWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				352AD26F2403FA5800FE672A /* Debug */,
@@ -372,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		352AD2712403FA5800FE672A /* Build configuration list for PBXNativeTarget "Sunny" */ = {
+		352AD2712403FA5800FE672A /* Build configuration list for PBXNativeTarget "SimpleWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				352AD2722403FA5800FE672A /* Debug */,

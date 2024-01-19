@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1130"
+   LastUpgradeVersion = "1510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "352AD25C2403FA5700FE672A"
-               BuildableName = "Sunny.app"
-               BlueprintName = "Sunny"
-               ReferencedContainer = "container:Sunny.xcodeproj">
+               BuildableName = "SimpleWeather.app"
+               BlueprintName = "SimpleWeather"
+               ReferencedContainer = "container:SimpleWeather.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "352AD25C2403FA5700FE672A"
-            BuildableName = "Sunny.app"
-            BlueprintName = "Sunny"
-            ReferencedContainer = "container:Sunny.xcodeproj">
+            BuildableName = "SimpleWeather.app"
+            BlueprintName = "SimpleWeather"
+            ReferencedContainer = "container:SimpleWeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "352AD25C2403FA5700FE672A"
-            BuildableName = "Sunny.app"
-            BlueprintName = "Sunny"
-            ReferencedContainer = "container:Sunny.xcodeproj">
+            BuildableName = "SimpleWeather.app"
+            BlueprintName = "SimpleWeather"
+            ReferencedContainer = "container:SimpleWeather.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
