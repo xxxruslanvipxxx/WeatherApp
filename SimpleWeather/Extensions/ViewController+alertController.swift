@@ -1,11 +1,3 @@
-//
-//  ViewController+alertController.swift
-//  Sunny
-//
-//  Created by Ivan Akulov on 25/02/2020.
-//  Copyright © 2020 Ivan Akulov. All rights reserved.
-//
-
 import UIKit
 
 extension ViewController {
@@ -28,4 +20,5 @@ extension ViewController {
         alertController.addAction(cancel)
         present(alertController, animated: true, completion: nil)
     }
+    
 }

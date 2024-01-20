@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  Sunny
-//
-//  Created by Ivan Akulov on 24/02/2020.
-//  Copyright © 2020 Ivan Akulov. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -22,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+          
     }
 }
 
