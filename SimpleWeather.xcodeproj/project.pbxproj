@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1428668E2B5EE55B00DD6502 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1428668D2B5EE55B00DD6502 /* CurrentWeather.swift */; };
 		14BEE22D2B5C0418007A78F9 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEE22C2B5C0418007A78F9 /* CurrentWeatherData.swift */; };
 		14BEE22F2B5C0E73007A78F9 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEE22E2B5C0E73007A78F9 /* NetworkWeatherManager.swift */; };
 		14BEE2312B5C1010007A78F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BEE2302B5C1010007A78F9 /* Constants.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1428668D2B5EE55B00DD6502 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		14BEE22C2B5C0418007A78F9 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 		14BEE22E2B5C0E73007A78F9 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		14BEE2302B5C1010007A78F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -96,8 +98,9 @@
 		352AD276240404B800FE672A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				14BEE22C2B5C0418007A78F9 /* CurrentWeatherData.swift */,
 				14BEE22E2B5C0E73007A78F9 /* NetworkWeatherManager.swift */,
+				14BEE22C2B5C0418007A78F9 /* CurrentWeatherData.swift */,
+				1428668D2B5EE55B00DD6502 /* CurrentWeather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				14BEE22D2B5C0418007A78F9 /* CurrentWeatherData.swift in Sources */,
 				352AD2652403FA5700FE672A /* ViewController.swift in Sources */,
+				1428668E2B5EE55B00DD6502 /* CurrentWeather.swift in Sources */,
 				352AD27B2404DD6600FE672A /* ViewController+alertController.swift in Sources */,
 				14BEE22F2B5C0E73007A78F9 /* NetworkWeatherManager.swift in Sources */,
 				14BEE2312B5C1010007A78F9 /* Constants.swift in Sources */,
