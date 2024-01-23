@@ -10,7 +10,7 @@ struct Location: Decodable {
 }
 
 struct Current: Decodable {
-    let temp: Int
+    let temp: Double
     let feelsLike: Double
     let condition: Condition
     
