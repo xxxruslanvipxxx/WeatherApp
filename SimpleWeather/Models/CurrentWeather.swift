@@ -6,9 +6,9 @@ struct CurrentWeather {
     
     let cityName: String
     
-    let currentTemperature: Int
+    let currentTemperature: Double
     var currentTemperatureString: String {
-        return "\(currentTemperature)"
+        return "\(currentTemperature.rounded())"
     }
     
     let feelsLikeTemperature: Double
