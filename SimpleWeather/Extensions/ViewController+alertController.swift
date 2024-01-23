@@ -13,8 +13,7 @@ extension ViewController {
             let textField = alertController.textFields?.first
             guard let cityName = textField?.text else { return }
             if cityName != "" {
-                let city = cityName.split(separator: " ").joined(separator: "%20")
-                completionHandler(city)
+                completionHandler(cityName)
             }
         }
         let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
