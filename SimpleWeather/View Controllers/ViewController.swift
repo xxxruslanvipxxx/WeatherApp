@@ -1,4 +1,5 @@
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
 
@@ -9,9 +10,16 @@ class ViewController: UIViewController {
     
     var networkWeatherManager = NetworkWeatherManager()
     
+    var locationManager: CLLocationManager = {
+        let locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+        locationManager.requestWhenInUseAuthorization()
+        return locationManager
+    }()
+    
     @IBAction func searchPressed(_ sender: UIButton) {
-        self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { [weak self] cityName in
-            self?.networkWeatherManager.fetchCurrentWeather(forCity: cityName)
+        self.presentSearchAlertController(withTitle: "Enter city name", message: nil, style: .alert) { [unowned self] cityName in
+            self.networkWeatherManager.fetchCurrentWeather(forRequestType: .cityName(city: cityName))
         }
     }
     
@@ -22,7 +30,13 @@ class ViewController: UIViewController {
             guard let self = self else {return}
             self.updateInterface(with: currentWeather)
         }
-        self.networkWeatherManager.fetchCurrentWeather(forCity: cityLabel.text!)
+        
+        locationManager.delegate = self
+        DispatchQueue.global().async {
+          if CLLocationManager.locationServicesEnabled() {
+              self.locationManager.requestLocation()
+          }
+        }
     }
     
     private func updateInterface(with weather: CurrentWeather) {
@@ -30,12 +44,27 @@ class ViewController: UIViewController {
             self.cityLabel.text = weather.cityName
             self.temperatureLabel.text = weather.currentTemperatureString
             self.feelsLikeTemperatureLabel.text = weather.feelsLikeTemperatureString
-            
             let imageString = weather.systemIconNameString
-            print(imageString)
             if let image = UIImage(systemName: imageString) {
                 self.weatherIconImageView.image = image
             }
         }
+    }
+}
+
+//MARK: - CLLocationManagerDelegate
+
+extension ViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.last else { return }
+        let latitude = location.coordinate.latitude
+        let longitude = location.coordinate.longitude
+        
+        networkWeatherManager.fetchCurrentWeather(forRequestType: .coordinate(latitude: latitude, longitude: longitude))
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
     }
 }

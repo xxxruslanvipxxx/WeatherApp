@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -151,7 +151,7 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1510;
-				ORGANIZATIONNAME = "Ivan Akulov";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					352AD25C2403FA5700FE672A = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -159,7 +159,7 @@
 				};
 			};
 			buildConfigurationList = 352AD2582403FA5700FE672A /* Build configuration list for PBXProject "SimpleWeather" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
