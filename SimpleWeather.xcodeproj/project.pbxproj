@@ -80,9 +80,9 @@
 			children = (
 				352AD2602403FA5700FE672A /* AppDelegate.swift */,
 				352AD2622403FA5700FE672A /* SceneDelegate.swift */,
+				14BEE2302B5C1010007A78F9 /* Constants.swift */,
 				352AD2692403FA5800FE672A /* Assets.xcassets */,
 				352AD26E2403FA5800FE672A /* Info.plist */,
-				14BEE2302B5C1010007A78F9 /* Constants.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
